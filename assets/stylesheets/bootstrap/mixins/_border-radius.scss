@@ -1,0 +1,18 @@
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  border-top-#{$opposite-direction}-radius: $radius;
+   border-top-#{$default-float}-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+  border-bottom-#{$opposite-direction}-radius: $radius;
+     border-top-#{$opposite-direction}-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+  border-bottom-#{$opposite-direction}-radius: $radius;
+   border-bottom-#{$default-float}-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+  border-bottom-#{$default-float}-radius: $radius;
+     border-top-#{$default-float}-radius: $radius;
+}
